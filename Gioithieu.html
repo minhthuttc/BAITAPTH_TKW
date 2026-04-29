@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giới Thiệu - Nguyễn Võ Minh Thư</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); min-height: 100vh; color: #fff; font-family: 'Segoe UI', sans-serif; }
+    .navbar { background: rgba(255,255,255,0.05) !important; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .navbar-brand, .nav-link { color: #fff !important; }
+    .nav-link:hover, .nav-link.active { color: #e94560 !important; }
+    .hero { padding: 80px 0 60px; text-align: center; }
+    .avatar-wrapper { position: relative; display: inline-block; margin-bottom: 30px; }
+    .avatar-img { 
+      width: 220px; 
+      height: 220px; 
+      border-radius: 50%; 
+      object-fit: cover; 
+      object-position: center; 
+      border: 5px solid #e94560; 
+      box-shadow: 0 0 40px rgba(233,69,96,0.6); 
+      display: block; 
+      margin: 0 auto;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      -webkit-backface-visibility: hidden;
+      -webkit-transform: translateZ(0) scale(1.0, 1.0);
+      transform: translateZ(0);
+    }
+    .avatar-placeholder { width: 180px; height: 180px; border-radius: 50%; background: linear-gradient(135deg, #e94560, #533483); display: flex; align-items: center; justify-content: center; font-size: 70px; border: 5px solid #e94560; box-shadow: 0 0 30px rgba(233,69,96,0.5); margin: 0 auto; }
+    .badge-school { background: rgba(233,69,96,0.2); border: 1px solid #e94560; color: #e94560; padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin-bottom: 15px; }
+    h1.name { font-size: 2.8rem; font-weight: 700; background: linear-gradient(90deg, #fff, #e94560); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .info-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; padding: 30px; margin-bottom: 25px; transition: transform 0.3s; }
+    .info-card:hover { transform: translateY(-5px); border-color: #e94560; }
+    .info-card i { color: #e94560; font-size: 1.5rem; margin-bottom: 10px; }
+    .section-title { font-size: 1.8rem; font-weight: 700; color: #e94560; margin-bottom: 30px; text-align: center; }
+    .skill-bar { background: rgba(255,255,255,0.1); border-radius: 10px; height: 10px; margin-bottom: 15px; }
+    .skill-fill { height: 10px; border-radius: 10px; background: linear-gradient(90deg, #e94560, #533483); }
+    .timeline-item { border-left: 3px solid #e94560; padding-left: 20px; margin-bottom: 25px; position: relative; }
+    .timeline-item::before { content: ''; width: 12px; height: 12px; background: #e94560; border-radius: 50%; position: absolute; left: -7.5px; top: 5px; }
+    .year-badge { background: #e94560; color: #fff; padding: 3px 12px; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
+    footer { background: rgba(0,0,0,0.3); border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; text-align: center; color: rgba(255,255,255,0.5); margin-top: 60px; }
+    .btn-custom { background: linear-gradient(135deg, #e94560, #533483); border: none; color: #fff; padding: 10px 28px; border-radius: 25px; font-weight: 600; transition: all 0.3s; }
+    .btn-custom:hover { transform: scale(1.05); box-shadow: 0 5px 20px rgba(233,69,96,0.4); color: #fff; }
+    audio { width: 100%; border-radius: 10px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="Gioithieu.html"><i class="fas fa-user-graduate me-2"></i>Minh Thư</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item"><a class="nav-link active" href="Gioithieu.html"><i class="fas fa-home me-1"></i>Giới Thiệu</a></li>
+        <li class="nav-item"><a class="nav-link" href="Trainghiem.html"><i class="fas fa-star me-1"></i>Trải Nghiệm</a></li>
+        <li class="nav-item"><a class="nav-link" href="Kinhnghiem.html"><i class="fas fa-briefcase me-1"></i>Kinh Nghiệm</a></li>
+        <li class="nav-item"><a class="nav-link" href="Chiase.html"><i class="fas fa-heart me-1"></i>Chia Sẻ</a></li>
+        <li class="nav-item"><a class="nav-link" href="Lienhe.html"><i class="fas fa-envelope me-1"></i>Liên Hệ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <img src="avata.png" class="avatar-img" alt="Nguyễn Võ Minh Thư">
+    <div class="badge-school mt-3"><i class="fas fa-university me-1"></i>Đại học Trà Vinh</div>
+    <h1 class="name">Nguyễn Võ Minh Thư</h1>
+    <p class="text-white-50 fs-5">Sinh viên Công nghệ Thông tin | Lớp DA22TTC | MSSV: 110122174</p>
+    <p class="text-white-50 mb-4"><i class="fas fa-map-marker-alt me-1 text-danger"></i>Trà Vinh, Việt Nam</p>
+    <a href="Lienhe.html" class="btn btn-custom me-2"><i class="fas fa-envelope me-1"></i>Liên Hệ</a>
+    <a href="Kinhnghiem.html" class="btn btn-outline-light rounded-pill px-4"><i class="fas fa-briefcase me-1"></i>Xem CV</a>
+  </div>
+</section>
+
+<!-- THÔNG TIN CÁ NHÂN -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-id-card me-2"></i>Thông Tin Cá Nhân</h2>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="info-card text-center">
+          <i class="fas fa-user fa-2x"></i>
+          <h6 class="mt-2 text-white-50">Họ và tên</h6>
+          <p class="fw-bold mb-0">Nguyễn Võ Minh Thư</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="info-card text-center">
+          <i class="fas fa-id-badge fa-2x"></i>
+          <h6 class="mt-2 text-white-50">MSSV</h6>
+          <p class="fw-bold mb-0">110122174</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="info-card text-center">
+          <i class="fas fa-chalkboard-teacher fa-2x"></i>
+          <h6 class="mt-2 text-white-50">Lớp</h6>
+          <p class="fw-bold mb-0">DA22TTC</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="info-card text-center">
+          <i class="fas fa-university fa-2x"></i>
+          <h6 class="mt-2 text-white-50">Trường</h6>
+          <p class="fw-bold mb-0">Đại học Trà Vinh</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GIỚI THIỆU BẢN THÂN -->
+<section class="py-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="section-title"><i class="fas fa-quote-left me-2"></i>Về Tôi</h2>
+        <p class="text-white-50 lh-lg">
+          Xin chào! Tôi là <strong class="text-white">Nguyễn Võ Minh Thư</strong>, sinh viên năm 4 ngành Công nghệ Thông tin tại <strong class="text-white">Đại học Trà Vinh</strong>. 
+          Tôi đam mê lập trình web, thiết kế giao diện và phát triển ứng dụng. 
+        </p>
+        <p class="text-white-50 lh-lg">
+          Trong suốt 4 năm học, tôi đã không ngừng học hỏi, tích lũy kiến thức và kỹ năng thực tế thông qua các dự án, cuộc thi và hoạt động ngoại khóa. 
+          Tôi luôn hướng đến việc trở thành một lập trình viên chuyên nghiệp, sáng tạo và có ích cho xã hội.
+        </p>
+        <div class="row mt-3">
+          <div class="col-6">
+            <p class="mb-1 text-white-50"><i class="fas fa-birthday-cake me-2 text-danger"></i>Năm sinh: 2003</p>
+            <p class="mb-1 text-white-50"><i class="fas fa-venus me-2 text-danger"></i>Giới tính: Nữ</p>
+            <p class="mb-1 text-white-50"><i class="fas fa-map-marker-alt me-2 text-danger"></i>Quê quán: Trà Vinh</p>
+          </div>
+          <div class="col-6">
+            <p class="mb-1 text-white-50"><i class="fas fa-graduation-cap me-2 text-danger"></i>Năm học: 2022 - 2026</p>
+            <p class="mb-1 text-white-50"><i class="fas fa-code me-2 text-danger"></i>Chuyên ngành: CNTT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUÁ TRÌNH HỌC TẬP -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-graduation-cap me-2"></i>Quá Trình Học Tập</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="timeline-item">
+          <span class="year-badge">2022 - 2023</span>
+          <h5 class="mt-2 text-white">Năm Nhất</h5>
+          <p class="text-white-50">Làm quen với môi trường đại học, học các môn đại cương: Toán cao cấp, Nhập môn lập trình C/C++.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year-badge">2023 - 2024</span>
+          <h5 class="mt-2 text-white">Năm Hai</h5>
+          <p class="text-white-50">Học các môn chuyên ngành: Cấu trúc dữ liệu, Lập trình hướng đối tượng Java, Cơ sở dữ liệu, Web cơ bản.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="timeline-item">
+          <span class="year-badge">2024 - 2025</span>
+          <h5 class="mt-2 text-white">Năm Ba</h5>
+          <p class="text-white-50">Làm đồ án cơ sở ngành, học lập trình web nâng cao, React, Node.js, thực tập tại công ty phần mềm địa phương.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="year-badge">2025 - 2026</span>
+          <h5 class="mt-2 text-white">Năm Tư</h5>
+          <p class="text-white-50">Làm đồ án chuyên ngành, Thực tập tại trường THPT TRẦN PHÚ, Thực hiện đồ án tốt nghiệp, hoàn thiện kỹ năng, chuẩn bị ra trường và tìm kiếm cơ hội việc làm. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="mb-1">© 2026 Nguyễn Võ Minh Thư | MSSV: 110122174 | Lớp DA22TTC</p>
+    <p class="mb-0 small">Đại học Trà Vinh</p>
+    <div class="mt-2">
+      <a href="Gioithieu.html" class="text-white-50 me-3 text-decoration-none small">Giới Thiệu</a>
+      <a href="Trainghiem.html" class="text-white-50 me-3 text-decoration-none small">Trải Nghiệm</a>
+      <a href="Kinhnghiem.html" class="text-white-50 me-3 text-decoration-none small">Kinh Nghiệm</a>
+      <a href="Chiase.html" class="text-white-50 me-3 text-decoration-none small">Chia Sẻ</a>
+      <a href="Lienhe.html" class="text-white-50 text-decoration-none small">Liên Hệ</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

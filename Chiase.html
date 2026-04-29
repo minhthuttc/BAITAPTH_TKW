@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chia Sẻ - Nguyễn Võ Minh Thư</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); min-height: 100vh; color: #fff; font-family: 'Segoe UI', sans-serif; }
+    .navbar { background: rgba(255,255,255,0.05) !important; backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .navbar-brand, .nav-link { color: #fff !important; }
+    .nav-link:hover, .nav-link.active { color: #e94560 !important; }
+    .page-header { background: linear-gradient(135deg, rgba(233,69,96,0.2), rgba(83,52,131,0.2)); border-bottom: 1px solid rgba(233,69,96,0.3); padding: 60px 0 40px; text-align: center; }
+    .page-header h1 { font-size: 2.5rem; font-weight: 700; color: #e94560; }
+    .section-title { font-size: 1.6rem; font-weight: 700; color: #e94560; margin-bottom: 25px; }
+    .share-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; padding: 30px; margin-bottom: 25px; transition: all 0.3s; }
+    .share-card:hover { border-color: #e94560; box-shadow: 0 8px 30px rgba(233,69,96,0.2); transform: translateY(-4px); }
+    .quote-card { background: linear-gradient(135deg, rgba(233,69,96,0.1), rgba(83,52,131,0.1)); border-left: 4px solid #e94560; border-radius: 0 16px 16px 0; padding: 25px 30px; margin-bottom: 20px; }
+    .quote-card blockquote { font-size: 1.1rem; font-style: italic; color: #e2d9f3; margin: 0; }
+    .quote-card cite { color: #e94560; font-size: 0.85rem; margin-top: 10px; display: block; }
+    .tip-card { background: rgba(233,69,96,0.08); border: 1px solid rgba(233,69,96,0.25); border-radius: 14px; padding: 22px; height: 100%; transition: all 0.3s; }
+    .tip-card:hover { border-color: #e94560; transform: scale(1.02); }
+    .tip-icon { font-size: 2rem; margin-bottom: 12px; }
+    .lesson-item { display: flex; gap: 15px; align-items: flex-start; padding: 18px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 15px; border: 1px solid rgba(255,255,255,0.08); transition: all 0.3s; }
+    .lesson-item:hover { border-color: #e94560; background: rgba(233,69,96,0.08); }
+    .lesson-num { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #e94560, #533483); display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+    .hobby-badge { background: rgba(233,69,96,0.15); border: 1px solid rgba(233,69,96,0.4); color: #e94560; padding: 8px 18px; border-radius: 25px; font-size: 0.85rem; margin: 5px; display: inline-block; transition: all 0.3s; }
+    .hobby-badge:hover { background: rgba(233,69,96,0.3); transform: scale(1.05); }
+    .book-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 18px; text-align: center; transition: all 0.3s; }
+    .book-card:hover { border-color: #e94560; transform: translateY(-5px); }
+    .book-emoji { font-size: 2.5rem; margin-bottom: 10px; }
+    footer { background: rgba(0,0,0,0.3); border-top: 1px solid rgba(255,255,255,0.1); padding: 20px 0; text-align: center; color: rgba(255,255,255,0.5); margin-top: 60px; }
+    audio { width: 100%; border-radius: 10px; margin-top: 10px; }
+    .year-divider { text-align: center; margin: 30px 0; }
+    .year-divider span { background: linear-gradient(135deg, #e94560, #533483); padding: 8px 24px; border-radius: 20px; font-weight: 700; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="Gioithieu.html"><i class="fas fa-user-graduate me-2"></i>Minh Thư</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-2">
+        <li class="nav-item"><a class="nav-link" href="Gioithieu.html"><i class="fas fa-home me-1"></i>Giới Thiệu</a></li>
+        <li class="nav-item"><a class="nav-link" href="Trainghiem.html"><i class="fas fa-star me-1"></i>Trải Nghiệm</a></li>
+        <li class="nav-item"><a class="nav-link" href="Kinhnghiem.html"><i class="fas fa-briefcase me-1"></i>Kinh Nghiệm</a></li>
+        <li class="nav-item"><a class="nav-link active" href="Chiase.html"><i class="fas fa-heart me-1"></i>Chia Sẻ</a></li>
+        <li class="nav-item"><a class="nav-link" href="Lienhe.html"><i class="fas fa-envelope me-1"></i>Liên Hệ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <h1><i class="fas fa-heart me-3"></i>Chia Sẻ & Cảm Nhận</h1>
+    <p class="text-white-50 mt-2">Những bài học, suy nghĩ và cảm nhận chân thật từ hành trình 4 năm đại học</p>
+  </div>
+</div>
+
+<!-- QUOTE NỔI BẬT -->
+<section class="py-5">
+  <div class="container">
+    <div class="quote-card">
+      <blockquote>"Đại học không chỉ là nơi học kiến thức, mà là nơi tôi học cách trưởng thành, học cách vấp ngã và đứng dậy, học cách yêu thương và trân trọng những điều nhỏ bé trong cuộc sống."</blockquote>
+      <cite>— Nguyễn Võ Minh Thư, sinh viên DA22TTC, Đại học Trà Vinh</cite>
+    </div>
+  </div>
+</section>
+
+<!-- BÀI HỌC TỪNG NĂM -->
+<section class="py-4">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-lightbulb me-2"></i>Bài Học Từ Mỗi Năm Học</h2>
+
+    <div class="year-divider"><span>🌱 Năm Nhất — 2022/2023</span></div>
+    <div class="share-card">
+      <h5 class="text-white mb-3"><i class="fas fa-quote-left me-2" style="color:#e94560"></i>Bỡ Ngỡ Và Thích Nghi</h5>
+      <p class="text-white-50 lh-lg">Năm nhất là khoảng thời gian khó khăn nhất với tôi. Lần đầu xa nhà, tự lo mọi thứ từ ăn uống đến học hành. Tôi từng muốn bỏ cuộc khi điểm Toán cao cấp học kỳ đầu chỉ được 5.5. Nhưng chính sự khó khăn đó đã dạy tôi bài học đầu tiên: <strong class="text-white">đừng bao giờ bỏ cuộc chỉ vì một thất bại nhỏ.</strong></p>
+      <p class="text-white-50 lh-lg">Tôi học cách quản lý thời gian, tự nấu ăn, và quan trọng hơn — tôi tìm được những người bạn thật sự. Những người bạn cùng phòng, cùng lớp đã trở thành gia đình thứ hai của tôi.</p>
+      <div class="mt-3 p-3" style="background:rgba(167,139,250,0.1); border-radius:10px;">
+        <p class="mb-0 text-white-50"><i class="fas fa-star me-2" style="color:#e94560"></i><strong class="text-white">Bài học:</strong> Thích nghi với môi trường mới, xây dựng thói quen học tập tốt từ sớm.</p>
+      </div>
+    </div>
+
+    <div class="year-divider"><span>💻 Năm Hai — 2023/2024</span></div>
+    <div class="share-card">
+      <h5 class="text-white mb-3"><i class="fas fa-quote-left me-2" style="color:#e94560"></i>Khám Phá Đam Mê Thật Sự</h5>
+      <p class="text-white-50 lh-lg">Năm hai là lúc tôi thật sự "bắt đầu yêu" lập trình. Khi viết được chương trình Java đầu tiên chạy đúng, cảm giác hứng khởi đó không thể diễn tả bằng lời. Tôi bắt đầu tự học thêm ngoài giờ học, xem tutorial, làm dự án nhỏ.</p>
+      <p class="text-white-50 lh-lg">Tôi cũng học được rằng <strong class="text-white">làm việc nhóm không dễ như nghĩ</strong>. Dự án nhóm đầu tiên có nhiều mâu thuẫn, nhưng cuối cùng chúng tôi vượt qua và tạo ra sản phẩm mà cả nhóm tự hào.</p>
+      <div class="mt-3 p-3" style="background:rgba(167,139,250,0.1); border-radius:10px;">
+        <p class="mb-0 text-white-50"><i class="fas fa-star me-2" style="color:#e94560"></i><strong class="text-white">Bài học:</strong> Tìm đam mê và theo đuổi nó. Kỹ năng làm việc nhóm quan trọng không kém kỹ năng kỹ thuật.</p>
+      </div>
+    </div>
+
+    <div class="year-divider"><span>🚀 Năm Ba — 2024/2025</span></div>
+    <div class="share-card">
+      <h5 class="text-white mb-3"><i class="fas fa-quote-left me-2" style="color:#e94560"></i>Va Chạm Thực Tế</h5>
+      <p class="text-white-50 lh-lg">Năm ba là năm tôi "lớn" nhất. Đi thực tập mới thấy khoảng cách giữa lý thuyết và thực tế lớn đến thế nào. Ngày đầu đi làm, tôi không biết dùng Git đúng cách, không quen với quy trình review code, cảm thấy mình còn thiếu rất nhiều.</p>
+      <p class="text-white-50 lh-lg">Nhưng chính môi trường đó đã giúp tôi tiến bộ nhanh hơn 3 tháng thực tập so với cả năm học. <strong class="text-white">Học từ người có kinh nghiệm, học từ sai lầm thực tế</strong> — đó là cách học hiệu quả nhất.</p>
+      <div class="mt-3 p-3" style="background:rgba(167,139,250,0.1); border-radius:10px;">
+        <p class="mb-0 text-white-50"><i class="fas fa-star me-2" style="color:#e94560"></i><strong class="text-white">Bài học:</strong> Đừng sợ va chạm thực tế. Hãy đi thực tập sớm, đừng chờ đến năm 4.</p>
+      </div>
+    </div>
+
+    <div class="year-divider"><span>🎓 Năm Tư — 2025/2026</span></div>
+    <div class="share-card">
+      <h5 class="text-white mb-3"><i class="fas fa-quote-left me-2" style="color:#e94560"></i>Nhìn Lại Và Hướng Tới</h5>
+      <p class="text-white-50 lh-lg">Năm tư là lúc tôi nhìn lại toàn bộ hành trình và cảm thấy biết ơn. Biết ơn những thầy cô đã tận tình dạy dỗ, những người bạn đã đồng hành, những khó khăn đã giúp tôi trưởng thành.</p>
+      <p class="text-white-50 lh-lg">Làm khóa luận tốt nghiệp dạy tôi bài học về <strong class="text-white">sự kiên nhẫn và tự lập</strong>. Không có ai cầm tay chỉ việc nữa, tôi phải tự nghiên cứu, tự giải quyết vấn đề. Và tôi đã làm được!</p>
+      <div class="mt-3 p-3" style="background:rgba(167,139,250,0.1); border-radius:10px;">
+        <p class="mb-0 text-white-50"><i class="fas fa-star me-2" style="color:#e94560"></i><strong class="text-white">Bài học:</strong> Hành trình quan trọng hơn đích đến. Hãy tận hưởng từng khoảnh khắc của tuổi sinh viên.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LỜI KHUYÊN -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-hand-holding-heart me-2"></i>Lời Khuyên Cho Sinh Viên Năm Nhất</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="tip-card">
+          <div class="tip-icon">📚</div>
+          <h6 class="text-white">Học Đều Đặn Mỗi Ngày</h6>
+          <p class="text-white-50 small">Đừng để dồn bài. Học 1-2 tiếng mỗi ngày hiệu quả hơn thức đêm trước thi rất nhiều. Xây dựng thói quen học tập ngay từ tuần đầu tiên.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="tip-card">
+          <div class="tip-icon">🤝</div>
+          <h6 class="text-white">Kết Nối Với Mọi Người</h6>
+          <p class="text-white-50 small">Tham gia câu lạc bộ, hoạt động ngoại khóa. Mạng lưới quan hệ trong đại học sẽ giúp ích rất nhiều cho sự nghiệp sau này.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="tip-card">
+          <div class="tip-icon">💻</div>
+          <h6 class="text-white">Tự Học Thêm Ngoài Giờ</h6>
+          <p class="text-white-50 small">Chương trình đại học chỉ là nền tảng. Hãy tự học thêm qua YouTube, Udemy, GitHub. Thị trường IT thay đổi rất nhanh.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="tip-card">
+          <div class="tip-icon">🏃</div>
+          <h6 class="text-white">Thực Tập Sớm</h6>
+          <p class="text-white-50 small">Đừng chờ đến năm 4 mới đi thực tập. Năm 3 hoặc thậm chí năm 2 hãy tìm kiếm cơ hội thực tập, làm part-time để tích lũy kinh nghiệm.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="tip-card">
+          <div class="tip-icon">💪</div>
+          <h6 class="text-white">Đừng Sợ Thất Bại</h6>
+          <p class="text-white-50 small">Thi rớt, làm dự án thất bại, bị từ chối phỏng vấn — tất cả đều là bài học. Quan trọng là đứng dậy và tiếp tục.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="tip-card">
+          <div class="tip-icon">⚖️</div>
+          <h6 class="text-white">Cân Bằng Cuộc Sống</h6>
+          <p class="text-white-50 small">Học tập quan trọng nhưng sức khỏe và tinh thần còn quan trọng hơn. Hãy dành thời gian cho sở thích, bạn bè và gia đình.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SỞ THÍCH -->
+<section class="py-4">
+  <div class="container">
+    <h2 class="section-title"><i class="fas fa-palette me-2"></i>Sở Thích & Đam Mê</h2>
+    <div class="share-card">
+      <p class="text-white-50 mb-4">Ngoài lập trình, tôi còn có nhiều sở thích giúp tôi cân bằng cuộc sống và tìm cảm hứng sáng tạo:</p>
+      <div class="text-center">
+        <span class="hobby-badge">🎵 Nghe nhạc</span>
+        <span class="hobby-badge">📖 Đọc sách</span>
+        <span class="hobby-badge">🎨 Thiết kế đồ họa</span>
+        <span class="hobby-badge">🍳 Nấu ăn</span>
+        <span class="hobby-badge">📸 Chụp ảnh</span>
+        <span class="hobby-badge">🎮 Gaming</span>
+        <span class="hobby-badge">✈️ Du lịch</span>
+        <span class="hobby-badge">🎬 Xem phim</span>
+        <span class="hobby-badge">☕ Cà phê sáng</span>
+        <span class="hobby-badge">🧘 Yoga</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LỜI KẾT -->
+<section class="py-5">
+  <div class="container">
+    <div class="share-card text-center">
+      <div style="font-size:3rem; margin-bottom:20px">💜</div>
+      <h4 class="text-white mb-3">Lời Kết</h4>
+      <p class="text-white-50 lh-lg mx-auto" style="max-width:600px">
+        Cảm ơn bạn đã ghé thăm trang web của tôi. Hành trình 4 năm đại học tại Đại học Trà Vinh là quãng thời gian tôi sẽ mãi trân trọng. Nếu bạn đang là sinh viên năm nhất, hãy tin rằng mọi khó khăn đều có thể vượt qua. Hãy cứ bước đi, dù chậm, miễn là không dừng lại.
+      </p>
+      <a href="Lienhe.html" class="btn mt-3" style="background: linear-gradient(135deg, #e94560, #533483); color:#fff; border:none; padding:12px 30px; border-radius:25px; font-weight:600;">
+        <i class="fas fa-envelope me-2"></i>Kết Nối Với Tôi
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p class="mb-1">© 2026 Nguyễn Võ Minh Thư | MSSV: 110122174 | Lớp DA22TTC</p>
+    <p class="mb-0 small">Đại học Trà Vinh</p>
+    <div class="mt-2">
+      <a href="Gioithieu.html" class="text-white-50 me-3 text-decoration-none small">Giới Thiệu</a>
+      <a href="Trainghiem.html" class="text-white-50 me-3 text-decoration-none small">Trải Nghiệm</a>
+      <a href="Kinhnghiem.html" class="text-white-50 me-3 text-decoration-none small">Kinh Nghiệm</a>
+      <a href="Chiase.html" class="text-white-50 me-3 text-decoration-none small">Chia Sẻ</a>
+      <a href="Lienhe.html" class="text-white-50 text-decoration-none small">Liên Hệ</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
